@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #ffeef2;
+    overflow: hidden;
+    zoom: 0.9;
+  }
+  
+  .slide {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 18px;
+    background: linear-gradient(to bottom right, #fff0f5, #ffebeb);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(1);
+  }
+  
+  .slide.visible {
+    display: flex;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.9rem;
+    color: #ff5e99;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    max-width: 78%;
+    color: #444;
+    line-height: 1.4;
+  }
+  
+  .icon, .main-img {
+    width: 180px;
+    height: auto;
+    margin: 18px 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.1);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+  }
+  
+  button {
+    font-size: 0.95rem;
+    padding: 9px 18px;
+    border: none;
+    background: #ff8bb3;
+    color: white;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ff5e99;
+  }
+  
+  #musicToggle {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
